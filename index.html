@@ -1,0 +1,240 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vebson Ltd - Premier FX & CFD Brokerage</title>
+    <style>
+        /* Global Styles */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            letter-spacing: 1px;
+        }
+
+        nav {
+            background-color: #fff;
+            padding: 15px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        nav a {
+            margin: 0 20px;
+            text-decoration: none;
+            color: #1e3c72;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #2a5298;
+        }
+
+        section {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        #hero {
+            background: url('https://via.placeholder.com/1920x600?text=Financial+Markets') no-repeat center/cover;
+            color: white;
+            text-align: center;
+            padding: 150px 20px;
+            position: relative;
+        }
+
+        #hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(30, 60, 114, 0.6);
+        }
+
+        #hero h2 {
+            font-size: 3em;
+            margin: 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        #hero p {
+            font-size: 1.2em;
+            position: relative;
+            z-index: 1;
+        }
+
+        #about, #services, #contact {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: #1e3c72;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            text-align: center;
+        }
+
+        .service-item {
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+
+        .service-item:hover {
+            transform: translateY(-10px);
+        }
+
+        .service-item i {
+            font-size: 2em;
+            color: #2a5298;
+            margin-bottom: 10px;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #1e3c72;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background-color: #2a5298;
+        }
+
+        footer {
+            background-color: #1e3c72;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            #hero {
+                padding: 100px 20px;
+            }
+
+            #hero h2 {
+                font-size: 2em;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <h1>Vebson Ltd</h1>
+    </header>
+
+    <nav>
+        <a href="#hero">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="hero">
+        <h2>Empowering Your Financial Future</h2>
+        <p>Premier Brokerage Services in FX and CFD Trading</p>
+    </section>
+
+    <section id="about">
+        <h2>About Vebson Ltd</h2>
+        <p>Vebson Ltd is an International Business Company incorporated in Saint Lucia on September 22, 2023, under registration number 2023-00468. As a licensed and regulated entity, we specialize in providing brokerage services for foreign exchange (FX) and contracts for difference (CFDs). Our operations are based in the beautiful island of Saint Lucia, with our registered office at Ground Floor, The Sotheby Building, Rodney Bay, Gros-Islet, Saint Lucia.</p>
+        <p>Led by our Director and Sole Shareholder, Benchuan Xue, we are committed to offering secure, transparent, and innovative trading solutions to clients worldwide. Our legal standing is affirmed through apostille and notarial certifications, ensuring compliance with international standards.</p>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service-grid">
+            <div class="service-item">
+                <i class="fas fa-chart-line"></i>
+                <h3>FX Trading</h3>
+                <p>Access major, minor, and exotic currency pairs with competitive spreads and leverage.</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-chart-bar"></i>
+                <h3>CFDs</h3>
+                <p>Trade contracts for difference on indices, commodities, metals, and cryptocurrencies.</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Risk Management</h3>
+                <p>Advanced tools and policies to ensure secure and compliant trading environments.</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-globe"></i>
+                <h3>Global Access</h3>
+                <p>Seamless platform for international clients with multi-language support.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <p style="text-align: center; margin-top: 20px;">Address: Ground Floor, The Sotheby Building, Rodney Bay, Gros-Islet, Saint Lucia<br>Email: info@vebson.com<br>Phone: +1 758 285 7447</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Vebson Ltd. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
+```
